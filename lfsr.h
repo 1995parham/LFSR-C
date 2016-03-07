@@ -1,15 +1,21 @@
 /*
  * Galois LFSR software implementation header file
  */
+#ifndef LFSR_H
+#define LFSR_H
+
 #include <stdint.h>
 
 typedef	uint64_t lfsr_data_t;
 
-typedef struct {
+struct lfsr {
         lfsr_data_t data,
-                    polynomial,
-                    mask;
-} lfsr_t;
+		    polynomial,
+		    mask;
+};
 
-void          GLFSR_init(lfsr_t *, lfsr_data_t, lfsr_data_t);
-unsigned char GLFSR_next(lfsr_t *);
+struct lfsr *GLFSR_new(lfsr_data_t polynom, lfsr_data_t seed_value);
+
+unsigned char GLFSR_next(struct lfsr *glfsr);
+
+#endif

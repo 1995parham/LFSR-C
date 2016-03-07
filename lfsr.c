@@ -42,8 +42,15 @@
  */
 #include "lfsr.h"
 
-void GLFSR_new(lfsr_t *glfsr, lfsr_data_t polynom, lfsr_data_t seed_value)
+#include <stdlib.h>
+#include <stdint.h>
+
+struct lfsr *GLFSR_new(lfsr_data_t polynom, lfsr_data_t seed_value)
 {
+	struct lfsr *glfsr;
+
+	glfsr = malloc(sizeof(struct lfsr));
+
 	lfsr_data_t seed_mask;
 	unsigned int shift = 8 * sizeof(lfsr_data_t) - 1;
 
@@ -60,9 +67,11 @@ void GLFSR_new(lfsr_t *glfsr, lfsr_data_t polynom, lfsr_data_t seed_value)
 		}
 		seed_mask >>= 1;
 	}
+
+	return glfsr;
 }
 
-unsigned char GLFSR_next(lfsr_t *glfsr)
+unsigned char GLFSR_next(struct lfsr *glfsr)
 {
 	unsigned char retval = 0;
 
