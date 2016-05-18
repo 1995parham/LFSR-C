@@ -10,7 +10,7 @@
 package lfsr
 
 type LFSR8 interface {
-	Init(uint8 poly, uint8 seed)
+	Init(poly uint8, seed uint8)
 	Next() uint8
 }
 
@@ -20,7 +20,7 @@ type glfsr8 struct {
 	poly uint8
 }
 
-func (g *glfsr8) Init(uint8 poly, uint8 seed) {
+func (g *glfsr8) Init(poly uint8, seed uint8) {
 }
 
 func (g *glfsr8) Next() uint8 {
