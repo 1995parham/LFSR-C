@@ -1,7 +1,8 @@
-# LFSR-C
+# LFSR-Go
 ## Introduction
-C Implementation of Linear Feedback Shift Register with some useful tools
-based on [Michael Foukarakis LFSR implementation and tools](https://github.com/mfukar/lfsr).
+Go Implementation of Linear Feedback Shift Register with some useful tools
+based on [Michael Foukarakis LFSR implementation and tools](https://github.com/mfukar/lfsr).  
+You found c implementation in `/c` directory.
 ## LFSR ?
 In computing, a linear-feedback shift register (LFSR) is a shift register whose input bit
 is a linear function of its previous state.
