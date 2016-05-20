@@ -20,8 +20,23 @@ type glfsr8 struct {
 }
 
 func (g *glfsr8) Init(poly uint8, seed uint8) {
+	var shift uint
+	shift = 7
+
 	g.poly = poly | 1
 	g.data = seed
+
+	var seed_mask uint8
+	seed_mask = 1
+	seed_mask <<= shift
+
+	for ; shift != 0; shift-- {
+		if (poly & seed_mask) != 0 {
+			g.mask = seed_mask
+			break
+		}
+		seed_mask >>= 1
+	}
 }
 
 func (g *glfsr8) Next() uint8 {
