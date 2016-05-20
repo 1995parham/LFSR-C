@@ -4,7 +4,7 @@
  * |
  * | Creation Date: 20-05-2016
  * |
- * | File Name:     glfsr_test.go
+ * | File Name:     flfsr8_test.go
  * +===============================================
  */
 package lfsr
