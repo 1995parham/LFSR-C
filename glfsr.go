@@ -9,7 +9,7 @@
  */
 package lfsr
 
-func NewGLFSR8(poly uint8, seed uint8) LFSR8 {
+func NewGLFSR8() LFSR8 {
 	return &glfsr8{}
 }
 
