@@ -15,7 +15,9 @@ import (
 	lfsr "github.com/1995parham/LFSR.go"
 )
 
-func TestGLFSR(t *testing.T) {
+func Test8One(t *testing.T) {
+	t.Logf("polynomial: x^7 + x^5 + x^4 + x^3 + 1, 1011 1000 = 0xB8\n")
+
 	var f, d lfsr.LFSR8
 	/* FLFSR initiation */
 	f = NewFLFSR8()
