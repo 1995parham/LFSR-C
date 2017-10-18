@@ -9,7 +9,9 @@
  */
 package flfsr
 
-func NewFLFSR16() LFSR16 {
+import lfsr "github.com/1995parham/LFSR.go"
+
+func NewFLFSR16() lfsr.LFSR16 {
 	return &flfsr16{}
 }
 

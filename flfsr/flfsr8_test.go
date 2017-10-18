@@ -7,14 +7,16 @@
  * | File Name:     flfsr8_test.go
  * +===============================================
  */
-package lfsr
+package flfsr
 
 import (
 	"testing"
+
+	lfsr "github.com/1995parham/LFSR.go"
 )
 
 func TestGLFSR(t *testing.T) {
-	var f, d LFSR8
+	var f, d lfsr.LFSR8
 	/* FLFSR initiation */
 	f = NewFLFSR8()
 	f.Init(0xB8, 0x40)
@@ -34,7 +36,7 @@ func TestGLFSR(t *testing.T) {
 	}
 }
 
-func NewDummyLFSR8() LFSR8 {
+func NewDummyLFSR8() lfsr.LFSR8 {
 	return &dlfsr8{}
 }
 

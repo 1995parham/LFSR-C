@@ -7,9 +7,11 @@
  * | File Name:     flfsr8.go
  * +===============================================
  */
-package lfsr
+package flfsr
 
-func NewFLFSR8() LFSR8 {
+import lfsr "github.com/1995parham/LFSR.go"
+
+func NewFLFSR8() lfsr.LFSR8 {
 	return &flfsr8{}
 }
 
