@@ -12,7 +12,8 @@ package flfsr
 
 import "github.com/1995parham/LFSR.go/lfsr"
 
-func NewFLFSR8() lfsr.LFSR8 {
+// New8 creates 8-bit fibonacci lfsr
+func New8() lfsr.LFSR8 {
 	return &flfsr8{}
 }
 

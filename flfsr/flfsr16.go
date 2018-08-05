@@ -12,7 +12,8 @@ package flfsr
 
 import "github.com/1995parham/LFSR.go/lfsr"
 
-func NewFLFSR16() lfsr.LFSR16 {
+// New16 creates 16-bit fibonacci lfsr
+func New16() lfsr.LFSR16 {
 	return &flfsr16{}
 }
 

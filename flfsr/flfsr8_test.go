@@ -20,7 +20,7 @@ func Test8One(t *testing.T) {
 
 	var f, d lfsr.LFSR8
 	/* FLFSR initiation */
-	f = NewFLFSR8()
+	f = New8()
 	f.Init(0xB8, 0x40)
 
 	/* DLFSR initiation */
