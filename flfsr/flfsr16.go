@@ -7,9 +7,10 @@
  * | File Name:     flfsr16.go
  * +===============================================
  */
+
 package flfsr
 
-import lfsr "github.com/1995parham/LFSR.go"
+import "github.com/1995parham/LFSR.go/lfsr"
 
 func NewFLFSR16() lfsr.LFSR16 {
 	return &flfsr16{}

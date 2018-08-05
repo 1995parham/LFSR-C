@@ -12,7 +12,7 @@ package flfsr
 import (
 	"testing"
 
-	lfsr "github.com/1995parham/LFSR.go"
+	"github.com/1995parham/LFSR.go/lfsr"
 )
 
 func Test8One(t *testing.T) {
