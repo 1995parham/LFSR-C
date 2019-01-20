@@ -1,5 +1,5 @@
 # LFSR-Go
-[![Travis](https://img.shields.io/travis/1995parham/LFSR.go.svg?style=flat-square)](https://travis-ci.org/1995parham/LFSR.go)
+[![Travis](https://img.shields.io/travis/com/1995parham/LFSR.go.svg?style=flat-square)](https://travis-ci.com/1995parham/LFSR.go)
 [![Go Report](https://goreportcard.com/badge/github.com/1995parham/LFSR.go?style=flat-square)](https://goreportcard.com/report/github.com/1995parham/LFSR.go)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square)](https://godoc.org/github.com/1995parham/LFSR.go)
 
